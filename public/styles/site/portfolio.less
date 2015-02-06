@@ -1,0 +1,44 @@
+/* Author: Christian Grimsgaard
+
+*/
+
+#portfolio-container {
+	.portfolio-project {
+        display: inline-block;
+        width: 25rem;
+        height: 25rem;
+        
+        .portfolio-image, .portfolio-image img {
+            transition: 0.25s;
+            -moz-transition: 0.25s;
+            -webkit-transition: 0.25s;
+            -o-transition: 0.25s;
+        }
+        .portfolio-image {
+            width: 20rem;
+            height: 20rem;
+            margin: 2.5rem;
+            overflow: hidden;
+            border-radius: 15rem;
+            
+            img {
+                width: 25rem;
+                height: 25rem;
+                display: block;
+                margin: -2.5rem;
+            }
+        }
+    }
+    .portfolio-project:hover {
+        .portfolio-image {
+            width: 25rem;
+            height: 25rem;
+            margin: 0;
+            border-radius: 0;
+            
+            img {
+               margin: 0;
+            }
+        }
+    }
+}
