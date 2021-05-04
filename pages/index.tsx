@@ -1,3 +1,5 @@
+import { faCode, faCoffee, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
 import styled from 'styled-components';
 
@@ -10,16 +12,26 @@ const StyledFrontPage = styled.main`
   align-items: center;
 `;
 
+const Link = styled.a`
+  color: currentColor;
+`;
+
+const Icon = styled(FontAwesomeIcon)`
+  height: 0.75em;
+`;
+
 const pages = [
   <TheOnlyComponent key="name">Christian Grimsgaard</TheOnlyComponent>,
   <TheOnlyComponent key="web" gradientName="blue">
-    Web developer
+    Web developer <Icon icon={faCode} />
   </TheOnlyComponent>,
   <TheOnlyComponent key="coffee" gradientName="brown">
-    Coffee nerd
+    Coffee nerd <Icon icon={faCoffee} />
   </TheOnlyComponent>,
   <TheOnlyComponent key="sayHi" gradientName="orange">
-    Say hi
+    <Link href="mailto:mail@christiangrimsgaard.net">
+      Say hi <Icon icon={faPaperPlane} />
+    </Link>
   </TheOnlyComponent>,
 ];
 
