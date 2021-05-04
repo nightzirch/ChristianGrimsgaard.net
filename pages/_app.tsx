@@ -9,6 +9,9 @@ export const GlobalStyle = createGlobalStyle`
     color: ${appTheme.color.black};
     margin: 0;
     padding: 0;
+    font-family: amatic-sc, sans-serif;
+    font-weight: 700;
+    font-style: normal;
   }
 `;
 

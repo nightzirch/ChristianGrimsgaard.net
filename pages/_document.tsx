@@ -45,6 +45,7 @@ class MyDocument extends Document {
           <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff1e00" />
           <meta name="msapplication-TileColor" content="#ffffff" />
           <meta name="theme-color" content="#ffffff" />
+          <link rel="stylesheet" href="https://use.typekit.net/dsd8lob.css"></link>
         </Head>
 
         <body>

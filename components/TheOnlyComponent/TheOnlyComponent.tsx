@@ -21,7 +21,9 @@ const TheOnlyStyledComponent = styled.div`
   `}
 `;
 
-const Text = styled.span``;
+const Text = styled.span`
+  font-size: 5rem;
+`;
 
 export const TheOnlyComponent = (props: Props): JSX.Element => {
   const { children, gradientName = 'default' } = props;
