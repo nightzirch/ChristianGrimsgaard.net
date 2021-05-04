@@ -20,7 +20,7 @@ const Icon = styled(FontAwesomeIcon)``;
 
 export const TonsOfTinyStuffInTheBackground = (props: Props): JSX.Element => {
   const { icons } = props;
-  const randomIcon = getRandomItemFromArray(icons);
+  const randomIcon = getRandomItemFromArray<any>(icons);
 
   return (
     <Wrapper>
