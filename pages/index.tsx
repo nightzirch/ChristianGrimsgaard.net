@@ -1,13 +1,15 @@
 import styled from 'styled-components';
 
-const StyledFrontPage = styled.main`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
+import { TheOnlyComponent } from '../components/TheOnlyComponent';
+
+const StyledFrontPage = styled.main``;
 
 const FrontPage = (): JSX.Element => {
-  return <StyledFrontPage>Frontpage</StyledFrontPage>;
+  return (
+    <StyledFrontPage>
+      <TheOnlyComponent gradientName="blue">Christian Grimsgaard</TheOnlyComponent>
+    </StyledFrontPage>
+  );
 };
 
 export default FrontPage;
